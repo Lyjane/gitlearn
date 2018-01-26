@@ -1,0 +1,33 @@
+linux操作系统的介绍：
+1.linux的历史    
+2.选择linux发行版
+3.在虚拟机中安装ubuntu
+4.linux图形界面(使用起来，命令行比图形界面更方便)
+5.linux命令行操作
+
+6.常用linux命令：  linux是区分字母大小写的
+cd进入文件夹 cd..退出文件夹  cd../..退出两级的目录
+ls打开当前目录(window用dir)      ls -l长格式命令  ls为短格式命令 长格式命令比短格式命令会显示更多的内容
+ls -a显示当前目录中的隐藏文件(linux下文件前有一个.说明该文件是隐藏文件)
+mkdir创建目录  mkdir aaa创建aaa文件夹  
+touch 创建文件  touch file-name  
+vi编写文件  touch file-name  vi-----i-----编写------：wq。
+cat 查看文件  cat file-name 
+cp复制文件(window用copy): cp file-name folder-name/file-name  复制文件到文件夹下， 并以文件名命名(可随意命名)
+cp -R复制目录: cp -R folder-name folder-name1 复制文件夹并以文件夹1命名
+pwd 在终端上显示当前目录的全部路径   /根路径
+rm 删除命令   rm file-name 删除文件       rm -r folder-name删除文件夹或目录
+   
+7.window系统下：
+cd进入文件夹 cd..退出文件夹  cd../..退出两级的目录
+mkdir创建目录或文件夹   md cygwin创建cygwin文件夹
+dir打开当前目录
+copy复制文件: copy file-name folder-name  复制文件到文件夹下
+del删除命令: del file-name 删除文件，系统删除后并没有提示且被删除的文件并不在回收站里，所以要小心使用
+rename 重命名: rename file/folder-name file/folder-name0 将文件名改为文件名0.
+
+8.linux基本命令    同6
+linux命令大全:   http://www.runoob.com/linux/linux-command-manual.html
+9.web服务器基础原理和概念：xampp和IIS
+xampp
+windows 控制面板/程序/启用或关闭windows功能/internet information services所有内容均勾选， 然后控制面板下  搜索 “服务”，选管理工具/internet信息服务器(IIS)管理器,双击，打开管理界面，浏览器直接输入localhost。默认的端口为80. 编辑网站中点击基本设置，在目录中找到www.root文件夹，在文件夹内建立项目，浏览器中localhost/文件.最后关闭服务。

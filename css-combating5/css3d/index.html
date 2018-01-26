@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <!-- 因为这里是移动端，那么要加上一行demo来配合移动端，就是viewport -->
+    <!-- 到这我们就可以到浏览器中看下我们写好的造物节的css3d的这样一个空间 -->
+    <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    <title>cs3d造物节</title>
+</head>
+
+<body>
+    <!-- 接下来我首先要写一个audio，且id为audio，这里要放整个的源，即source -->
+    <audio id="audio">
+        <source src="./audio/bgm.mp3" type="audio/mpeg">
+          <!-- <source src="./audio/bgm.ogg" type="audio/ogg">   -->
+    </audio>
+    <!-- 然后我需要一个div来帮助我来设置，音乐是播放还是暂停 的这个标志的央视-->
+    <!-- 写完这个样式后还要写js，因为要通过喇叭这个按钮来控制音乐是播放还是暂停 -->
+    
+    <!-- text-align:属性规定元素中的文本的水平对齐方式
+    z-index:属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+    Z-index 仅能在定位元素上奏效（例如 position:absolute;）！ -->
+    <div style="text-align: right; position: absolute; right: 1rem; z-index: 999" id="laba" >⏸</div>
+ <!-- 
+    首先给一个div 容器，div里面包一个div是box,我需要box里面所有的子元素都是3D,所以接下来写20个div。
+    20个div我标上标签，便于后面的书写
+-->
+    <div id="container" class="container">
+        <div id='box'>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+        </div>
+    </div>
+    <script type="text/javascript" src='./scripts/index.js'></script>
+</body>
+
+</html>

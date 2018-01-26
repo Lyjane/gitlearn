@@ -1,0 +1,36 @@
+/*steps1:为body设置背景图片，这里指定url*/
+body{
+	background-image: url('../img/bg.jpg')
+}
+/*steps2:为整个container设置样式，首先指定margin，接着指定width，这里的width是129px*/
+.container{
+	margin: 0 auto 0 auto;/*设置container的4个外边距*/
+	width: 129px;/*129px/16=8.0625*/
+	-webkit-perspective: 25rem;/*为div指定一个透视点，我先试下25rem，若不够的话在进行调整*/
+}
+/*steps3:设置box的样式，box所有的子元素应该都是3D的这样一个元素，
+所以第1步，应该是设置transform-style: preserve-3d；
+第2步，指定一个高；
+第3步，定义我们向哪里看，我们上下左右都均等，即50%，50%，这样我们就可以看到整个的中心点
+    当然这句话不写也可以，我们默认的也是50%的，即只看中心点这个位置。
+*/
+#box{
+	-webkit-transform-style: preserve-3d;/*使被转换的子元素保留其 3D 转换*/
+	height: 100%;
+	 -webkit-perspective-origin: 50% 50%; /*属性定义 3D 元素所基于的 X 轴和 Y 轴*/
+}
+/*
+最后，为所有box下的div写一个统一的样式，我用选择器；
+首先，制定我们所有的这样的position，是绝对路径；
+这里的width应该也等于129px，我给他换成rem
+*/
+#box > div{
+	position: absolute;
+	width: 129px;
+	height:1170px;/*1170px/16=73.125*/	
+}
+/*这样我就写好了整个的样式，有同学可能会有疑问，
+那么我们每一个div的背景图呢？他旋转的角度呢，以及我计算好的往后退多少呢？哪里写呢？
+这里我们去到js里去写这样的样式。
+就不用写很多的css，帮助我们css的这样一个冗余
+*/

@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# Time: Sat Dec 23 2017 16:19:20 GMT+0800 (中国标准时间)
+# koatesting
+
+CACHE:
+../public/css/vendor.css
+
+NETWORK:
+http://cdn.bootcss.com/ *
+http://localhost:35729/livereload.js

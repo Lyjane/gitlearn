@@ -1,0 +1,18 @@
+body{
+	background-image: url('../img/bg.jpg')
+}
+.container{
+	margin: 0 auto 0 auto;/*设置container的4个外边距*/
+	width: 129px;/*129px/16=8.0625*/
+	perspective: 25rem;/*为div指定一个透视点，我先试下25rem，若不够的话在进行调整*/
+}
+#box{
+	-webkit-transform-style: preserve-3d;
+	height: 100%;
+	 -webkit-perspective-origin: 50% 50%;
+}
+#box > div{
+	position: absolute;
+	width: 129px;
+	height:1170px;/*1170px/16=73.125*/	
+}
